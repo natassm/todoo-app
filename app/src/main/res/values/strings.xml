@@ -7,4 +7,5 @@
     <string name="tasks">Tasks</string>
     <string name="notes">Notes</string>
     <string name="alarm">Alarm</string>
+    <string name="latest_tasks">Your latest tasks</string>
 </resources>
