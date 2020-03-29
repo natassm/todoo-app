@@ -3,4 +3,34 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="alice_blue">#f2f3f4</color>
+
+    <color name="navy">#000066</color>
+    <color name="royal_blue">#3366cc</color>
+    <color name="lochmara">#336699</color>
+
+    <color name="carnation_pink">#ff9fbd</color>
+    <color name="light_pink">#ff9fa5</color>
+    <color name="light_pink_2">#ff537a</color>
+    <color name="midnight_express">#131339</color>
+    <color name="black_russian">#060613</color>
+    <color name="black">#000000</color>
+    <color name="dull_navy">#252574</color>
+
+    <color name="teak">#B99C6B</color>
+    <color name="potters_clay">#855733</color>
+    <color name="espresso">#613318</color>
+    <color name="gray_olive">#A9A18C</color>
+    <color name="cement">#816C5B</color>
+    <color name="english_walnut">#493829</color>
+    <color name="prairie_sand">#8F3B1B</color>
+    <color name="mango_tango">#D57500</color>
+    <color name="chenin">#DBCA69</color>
+    <color name="woodland">#404F24</color>
+    <color name="apple">#668D3C</color>
+    <color name="sprout">#BDD09F</color>
+    <color name="blue_bayoux">#4E6172</color>
+    <color name="regent_gray">#83929F</color>
+    <color name="hit_gray">#A3ADB8</color>
 </resources>

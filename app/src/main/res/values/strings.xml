@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">todoo-app</string>
+    <string name="intro_dashboard">Remember what\nyou should do</string>
+    <string name="intro_dashboard_card">Hello, welcome to\nTODOO Application\nNice to see you! -NatashaEuklides-</string>
+    <string name="choose_activity">Choose your activity</string>
+
+    <string name="tasks">Tasks</string>
+    <string name="notes">Notes</string>
+    <string name="alarm">Alarm</string>
 </resources>
