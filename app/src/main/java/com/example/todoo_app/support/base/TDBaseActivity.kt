@@ -5,6 +5,7 @@ import android.os.Handler
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import com.example.todoo_app.R
 
 abstract class TDBaseActivity : AppCompatActivity(), View.OnClickListener{
 
@@ -32,7 +33,7 @@ abstract class TDBaseActivity : AppCompatActivity(), View.OnClickListener{
 
     protected open fun setOnClickAction(id: Int) {
         when (id) {
-//            R.id.toolbarBackImageView -> onBackPressed()
+            R.id.toolbarBackImageView -> onBackPressed()
         }
     }
 

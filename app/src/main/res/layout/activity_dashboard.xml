@@ -8,6 +8,26 @@
     tools:context=".screen.TDDashboardActivity">
 
 
+    <TextView
+        android:id="@+id/proximitySensorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/proximitySensorTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/proximitySensorTextView" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/dashboardLatestTaskRecyclerView"
         android:layout_width="match_parent"
@@ -124,7 +144,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cement">
+                    android:background="@drawable/background_activity_card">
 
                     <ImageView
                         android:id="@+id/dashboardAlarmActivityImageView"
@@ -169,7 +189,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cement">
+                    android:background="@drawable/background_activity_card">
 
                     <ImageView
                         android:id="@+id/dashboardTasksActivityImageView"
@@ -212,7 +232,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/cement">
+                    android:background="@drawable/background_activity_card">
 
                     <ImageView
                         android:id="@+id/dashboardNotesActivityImageView"

@@ -7,5 +7,37 @@
     <string name="tasks">Tasks</string>
     <string name="notes">Notes</string>
     <string name="alarm">Alarm</string>
+    <string name="add_tasks">Add Tasks</string>
+    <string name="add_notes">Add Notes</string>
+    <string name="add_alarm">Add Alarms</string>
     <string name="latest_tasks">Your latest tasks</string>
+
+    <string name="title">Add Title</string>
+    <string name="title2">Title</string>
+    <string name="desc">Description</string>
+    <string name="due_date">Due Date</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="choose_time">Choose Time</string>
+    <string name="create_new">Create New</string>
+    <string name="cancel">Cancel</string>
+    <string name="titleTV">What you wanna do?</string>
+    <string name="descTV">Add the description here!</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="new_notes">Create New Task!</string>
+    <string name="update_delete">Update or Delete</string>
+    <string name="choose_due_date">Choose your due date!</string>
+    <string name="choose_due_time">Choose the time!</string>
+    <string name="wanna_set_alarm">Wanna set an alarm?</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="detail_task">Your Detail Task</string>
+    <string name="urgent_task">Urgent Tasks</string>
+    <string name="important_task">Important Tasks</string>
+    <string name="medium_task">Medium Tasks</string>
+    <string name="low_task">Low Tasks</string>
+    <string name="priority">Choose Task Priority</string>
+    <string name="all_tasks">All Tasks</string>
+    <string name="no_proximity">No Proximity Sensor</string>
+    <string name="too_near">Too Near</string>
+    <string name="far_away">Far Away</string>
 </resources>
