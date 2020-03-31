@@ -25,6 +25,8 @@ class TDAddTasksActivity: TDBaseActivity() {
         super.initiateDefaultValue()
 
         setUpGyroscope()
+
+        buildOnClickListener(toolbarBackImageView)
     }
 
     private fun setUpGyroscope() {
