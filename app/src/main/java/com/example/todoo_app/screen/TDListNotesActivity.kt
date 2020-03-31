@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_list_tasks.toolbarBackImageView
 
 class TDListNotesActivity: TDBaseActivity() {
 
-    override fun getContentViewId(): Int = R.layout.activity_list_tasks
+    override fun getContentViewId(): Int = R.layout.activity_list_notes
 
     override fun initiateDefaultValue() {
         super.initiateDefaultValue()
@@ -19,7 +19,7 @@ class TDListNotesActivity: TDBaseActivity() {
     override fun setOnClickAction(id: Int) {
         super.setOnClickAction(id)
         when (id) {
-            R.id.listTasksImageView -> startActivity(TDRouter.onGoToListNotes(this@TDListNotesActivity))
+//            R.id.listTasksImageView -> startActivity(TDRouter.onGoToListNotes(this@TDListNotesActivity))
         }
     }
 }

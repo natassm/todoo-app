@@ -24,11 +24,11 @@
                 android:id="@+id/listNotesImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="32dp"
                 app:layout_constraintEnd_toEndOf="@+id/listNotesCardView3"
                 app:layout_constraintStart_toStartOf="@+id/listNotesCardView2"
                 app:layout_constraintTop_toBottomOf="@id/listNotesCardView2"
-                app:srcCompat="@drawable/ic_add_brown" />
+                android:src="@drawable/ic_add_brown" />
 
             <ImageView
                 android:id="@+id/toolbarBackImageView"
@@ -95,7 +95,7 @@
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/dmsregular"
                         android:text="@string/notes_1"
-                        android:textSize="20sp"
+                        android:textSize="14sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/listNotesTitleTextView"
                         app:layout_constraintTop_toBottomOf="@id/listNotesTitleTextView" />
@@ -110,7 +110,9 @@
                 android:layout_height="200dp"
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
                 app:cardCornerRadius="15dp"
+                app:layout_constraintEnd_toStartOf="@+id/listNotesCardView3"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/listNotesCardView"
                 tools:cardCornerRadius="100dp">
@@ -159,10 +161,12 @@
                 android:id="@+id/listNotesCardView3"
                 android:layout_width="150dp"
                 android:layout_height="200dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
                 app:cardCornerRadius="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/listNotesCardView2"
                 app:layout_constraintTop_toBottomOf="@id/listNotesCardView"
                 tools:cardCornerRadius="100dp">
 

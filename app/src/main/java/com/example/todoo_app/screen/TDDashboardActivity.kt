@@ -51,7 +51,7 @@ class TDDashboardActivity : TDBaseActivity(){
     override fun initiateDefaultValue() {
         super.initiateDefaultValue()
 
-        buildOnClickListener(dashboardTasksActivityCardView)
+        buildOnClickListener(dashboardTasksActivityCardView, dashboardNotesActivityCardView)
 
         setUpProximitySensor()
 
@@ -65,6 +65,7 @@ class TDDashboardActivity : TDBaseActivity(){
         super.setOnClickAction(id)
         when (id) {
             R.id.dashboardTasksActivityCardView -> startActivity(TDRouter.onGoToListTasks(this@TDDashboardActivity))
+            R.id.dashboardNotesActivityCardView -> startActivity(TDRouter.onGoToListNotes(this@TDDashboardActivity))
         }
     }
 
@@ -82,7 +83,7 @@ class TDDashboardActivity : TDBaseActivity(){
     private fun setUpRecyclerView() {
         val list = listOf(
             TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
+            TasksListEntity("Medium", "Makan", "Jangan lupa makan", "31/03/2020"),
             TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
             TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
             TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
