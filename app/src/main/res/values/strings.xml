@@ -40,4 +40,11 @@
     <string name="no_proximity">No Proximity Sensor</string>
     <string name="too_near">Too Near</string>
     <string name="far_away">Far Away</string>
+
+    <string name="your_first_notes">Your First Notes</string>
+    <string name="notes_1">Hey. . .\nWelcome to note!\nHere you can add text notes!\nStay in top of your game and never miss anything important!</string>
+    <string name="notes_2">Grocery list</string>
+    <string name="notes_3">This is shopping list for this month</string>
+    <string name="notes_4">Recovery</string>
+    <string name="notes_5">Hati yang gembira adalah obat</string>
 </resources>

@@ -25,6 +25,12 @@
     <color name="gray_olive">#A9A18C</color>
     <color name="cement">#816C5B</color>
     <color name="english_walnut">#493829</color>
+    <color name="brown_1">#E3D7C3</color>
+    <color name="brown_2">#DCCDB5</color>
+    <color name="brown_3">#D5C3A6</color>
+    <color name="brown_4">#CEB997</color>
+    <color name="brown_5">#C7AF88</color>
+    <color name="brown_6">#C0A579</color>
     <color name="prairie_sand">#8F3B1B</color>
     <color name="mango_tango">#D57500</color>
     <color name="chenin">#DBCA69</color>
@@ -35,7 +41,7 @@
     <color name="regent_gray">#83929F</color>
     <color name="hit_gray">#A3ADB8</color>
 
-    <color name="brown_3">#D1C3B7</color>
+    <color name="brown">#D1C3B7</color>
     <color name="yellow">#FBE374</color>
     <color name="red">#FF0000</color>
 </resources>
