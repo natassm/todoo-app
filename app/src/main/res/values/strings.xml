@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">todoo-app</string>
+    <string name="todoo">Todoo</string>
     <string name="intro_dashboard">Remember what\nyou should do</string>
     <string name="intro_dashboard_card">Hello, welcome to\nTODOO Application\nNice to see you! -NatashaEuklides-</string>
     <string name="choose_activity">Choose your activity</string>
@@ -48,4 +49,9 @@
     <string name="notes_4">Recovery</string>
     <string name="notes_5">Hati yang gembira adalah obat</string>
     <string name="sound">Sound</string>
+    
+    <string name="alarm_time">07 : 21</string>
+    <string name="alarm_day">02 / 04 / 2020</string>
+    <string name="set_alarm_time">Set Time</string>
+    <string name="set_alarm_date">Set Date</string>
 </resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_alarm">
+
+    <ImageView
+        android:id="@+id/toolbarBackImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_arrow_brown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alarmTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/dmsregular2"
+        android:text="@string/alarm"
+        android:textColor="@color/cement"
+        android:textSize="25sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarBackImageView"
+        app:layout_constraintStart_toEndOf="@+id/toolbarBackImageView"
+        app:layout_constraintTop_toTopOf="@+id/toolbarBackImageView" />
+
+    <TextView
+        android:id="@+id/alarmTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/dmsregular2"
+        android:gravity="center"
+        android:text="@string/alarm_time"
+        android:textSize="75sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmTextView" />
+
+    <TextView
+        android:id="@+id/alarmDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/dmsbold"
+        android:gravity="center"
+        android:text="@string/alarm_day"
+        android:textColor="@color/cement"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/alarmTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/alarmTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/alarmTimeTextView" />
+
+    <TextView
+        android:id="@+id/setAlarmTimeTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/activity_card_bg"
+        android:fontFamily="@font/dmsbold"
+        android:gravity="center"
+        android:text="@string/set_alarm_time"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/alarmTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/alarmTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/alarmDateTextView" />
+
+    <TextView
+        android:id="@+id/setAlarmDateTextView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/activity_card_bg"
+        android:fontFamily="@font/dmsbold"
+        android:gravity="center"
+        android:text="@string/set_alarm_date"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/alarmTimeTextView"
+        app:layout_constraintStart_toStartOf="@+id/alarmTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/setAlarmTimeTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -51,7 +51,7 @@ class TDDashboardActivity : TDBaseActivity(){
     override fun initiateDefaultValue() {
         super.initiateDefaultValue()
 
-        buildOnClickListener(dashboardTasksActivityCardView, dashboardNotesActivityCardView)
+        buildOnClickListener(dashboardTasksActivityCardView, dashboardNotesActivityCardView, dashboardAlarmActivityCardView)
 
         setUpProximitySensor()
 
@@ -71,6 +71,7 @@ class TDDashboardActivity : TDBaseActivity(){
         when (id) {
             R.id.dashboardTasksActivityCardView -> startActivity(TDRouter.onGoToListTasks(this@TDDashboardActivity))
             R.id.dashboardNotesActivityCardView -> startActivity(TDRouter.onGoToListNotes(this@TDDashboardActivity))
+            R.id.dashboardAlarmActivityCardView -> startActivity(TDRouter.onGoToAlarm(this@TDDashboardActivity))
         }
     }
 
@@ -87,12 +88,12 @@ class TDDashboardActivity : TDBaseActivity(){
 
     private fun setUpRecyclerView() {
         val list = listOf(
-            TasksListEntity("Urgent", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
+            TasksListEntity("Highest", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
             TasksListEntity("Medium", "Eat", "Don't forget to eat and drink!", "01/04/2020"),
-            TasksListEntity("Medium", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020"),
-            TasksListEntity("Urgent", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
+            TasksListEntity("High", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020"),
+            TasksListEntity("Highest", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
             TasksListEntity("Medium", "Eat", "Don't forget to eat and drink!", "01/04/2020"),
-            TasksListEntity("Medium", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020")
+            TasksListEntity("High", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020")
         )
 
         tasksListAdapter = TDTasksListAdapter(list)

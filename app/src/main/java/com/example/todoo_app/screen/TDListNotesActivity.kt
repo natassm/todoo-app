@@ -57,6 +57,10 @@ class TDListNotesActivity: TDBaseActivity() {
                     popupWindow.exitTransition = slideOut
                 }
 
+                popupWindow.inputMethodMode = PopupWindow.INPUT_METHOD_NEEDED;
+                popupWindow.isFocusable = false;
+                popupWindow.isOutsideTouchable = false;
+
                 val cancelButtonPopup = view.findViewById<Button>(R.id.addNotesCancelbutton)
                 val createButtonPopUp = view.findViewById<Button>(R.id.addNotesCreateNewButton)
 

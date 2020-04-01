@@ -15,4 +15,6 @@ object TDRouter {
     fun onGoToListNotes(activity: Activity): Intent = Intent(activity, TDListNotesActivity::class.java)
 
     fun onGoToAddNotes(activity: Activity): Intent = Intent(activity, TDAddNotesActivity::class.java)
+
+    fun onGoToAlarm(activity: Activity): Intent = Intent(activity, TDAlarmActivity::class.java)
 }
