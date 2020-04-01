@@ -7,5 +7,10 @@
         <item name="colorPrimaryDark">@color/potters_clay</item>
         <item name="colorAccent">@color/espresso</item>
     </style>
+    
+    <style name="AppTheme.PopMe">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
 
 </resources>

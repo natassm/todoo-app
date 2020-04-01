@@ -15,23 +15,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TDAddNotesActivity"></activity>
         <activity
-            android:name=".screen.TDSplashActivity"
-            android:windowSoftInputMode="stateVisible|adjustPan">
+            android:name=".screen.TDSplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".screen.TDAddNotesActivity" android:theme="@style/AppTheme.PopMe"/>
         <activity android:name=".screen.TDDashboardActivity" />
         <activity
             android:name=".screen.TDAddTasksActivity"
             android:windowSoftInputMode="stateVisible|adjustPan" />
         <activity
-            android:name=".screen.TDListTasksActivity"
-            android:windowSoftInputMode="stateVisible|adjustPan" />
+            android:name=".screen.TDListTasksActivity"/>
         <activity android:name=".screen.TDListNotesActivity" />
     </application>
 

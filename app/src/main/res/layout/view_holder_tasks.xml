@@ -14,17 +14,15 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/background_activity_card_2"
+        android:layout_marginBottom="16dp"
         android:padding="16dp"
         app:cardCornerRadius="15dp"
-        app:cardElevation="5dp"
+        app:cardElevation="10dp"
         app:cardPreventCornerOverlap="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeColor="@color/brown_3"
         app:strokeWidth="4dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -36,11 +34,14 @@
                 android:id="@+id/itemListTitleTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/dmsbold"
+                android:gravity="left"
                 android:textColor="@color/white"
-                android:textSize="14sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/itemListPriorityTextView"
                 app:layout_constraintTop_toBottomOf="@id/itemListPriorityTextView" />
 
@@ -49,9 +50,12 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/dmsregular"
                 android:textColor="@color/white"
+                android:textSize="18sp"
                 android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@id/itemListTitleTextView"
                 app:layout_constraintTop_toBottomOf="@+id/itemListTitleTextView" />
 
@@ -61,10 +65,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:fontFamily="@font/dmsbolditalic"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/dmsregular2"
+                android:gravity="left"
                 android:textAllCaps="true"
                 android:textColor="@color/white"
+                android:textSize="16sp"
                 android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -72,15 +80,18 @@
                 android:id="@+id/itemListDateTextView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/dmsregular"
+                android:fontFamily="@font/dmsregular2"
                 android:gravity="right"
+                android:paddingEnd="5dp"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/itemListDescTextView" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

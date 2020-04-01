@@ -54,7 +54,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/dashboardIntroCardView"
         android:layout_width="match_parent"
-        android:layout_height="75dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="24dp"
@@ -85,8 +85,9 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
-                android:fontFamily="@font/dmsregular"
+                android:fontFamily="@font/dmsregular2"
                 android:text="@string/intro_dashboard_card"
+                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/dashboardIntroImageView"
@@ -96,11 +97,14 @@
 
     <TextView
         android:id="@+id/dashboardChooseActivityTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:fontFamily="@font/dmsbold"
         android:text="@string/choose_activity"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/dashboardIntroCardView"
         app:layout_constraintTop_toBottomOf="@+id/dashboardIntroCardView" />
 
@@ -108,8 +112,10 @@
         android:id="@+id/dashboardLatestTasksTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/dmsbold"
         android:text="@string/latest_tasks"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/dashboardChooseActivityTextView"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
@@ -117,7 +123,6 @@
         android:id="@+id/horizontalScrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:paddingTop="10dp"
         android:paddingBottom="20dp"
         android:scrollbars="none"
@@ -134,8 +139,11 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/dashboardNotesActivityCardView"
                 app:layout_constraintStart_toEndOf="@+id/dashboardTasksActivityCardView"
@@ -145,7 +153,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/background_activity_card">
+                    android:background="@drawable/activity_card_bg">
 
                     <ImageView
                         android:id="@+id/dashboardAlarmActivityImageView"
@@ -159,7 +167,7 @@
 
                     <TextView
                         android:id="@+id/dashboardAlarmActivityTextView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"
@@ -167,8 +175,9 @@
                         android:clickable="true"
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/dmsbold"
+                        android:gravity="center"
                         android:text="@string/alarm"
-                        android:textColor="@color/white"
+                        android:textSize="18sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/dashboardAlarmActivityImageView" />
@@ -180,8 +189,11 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/dashboardAlarmActivityCardView"
                 app:layout_constraintStart_toStartOf="parent"
@@ -191,7 +203,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/background_activity_card">
+                    android:background="@drawable/activity_card_bg">
 
                     <ImageView
                         android:id="@+id/dashboardTasksActivityImageView"
@@ -205,14 +217,15 @@
 
                     <TextView
                         android:id="@+id/dashboardTasksActivityTextView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"
                         android:layout_marginEnd="8dp"
                         android:fontFamily="@font/dmsbold"
+                        android:gravity="center"
                         android:text="@string/tasks"
-                        android:textColor="@color/white"
+                        android:textSize="18sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/dashboardTasksActivityImageView" />
@@ -224,8 +237,11 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/dashboardAlarmActivityCardView"
@@ -235,7 +251,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/background_activity_card">
+                    android:background="@drawable/activity_card_bg">
 
                     <ImageView
                         android:id="@+id/dashboardNotesActivityImageView"
@@ -249,14 +265,15 @@
 
                     <TextView
                         android:id="@+id/dashboardNotesActivityTextView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="4dp"
                         android:layout_marginEnd="8dp"
                         android:fontFamily="@font/dmsbold"
+                        android:gravity="center"
                         android:text="@string/notes"
-                        android:textColor="@color/white"
+                        android:textSize="18sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/dashboardNotesActivityImageView" />

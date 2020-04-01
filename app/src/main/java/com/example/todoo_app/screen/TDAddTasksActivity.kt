@@ -10,6 +10,7 @@ import android.os.Build
 import android.view.WindowManager
 import androidx.annotation.RequiresApi
 import com.example.todoo_app.R
+import com.example.todoo_app.support.TDRouter
 import com.example.todoo_app.support.base.TDBaseActivity
 import kotlinx.android.synthetic.main.activity_add_tasks.*
 import kotlinx.android.synthetic.main.activity_dashboard.*
@@ -26,7 +27,15 @@ class TDAddTasksActivity: TDBaseActivity() {
 
         setUpGyroscope()
 
-        buildOnClickListener(toolbarBackImageView)
+        buildOnClickListener(toolbarBackImageView, createNewButton, cancelButton)
+    }
+
+    override fun setOnClickAction(id: Int) {
+        super.setOnClickAction(id)
+        when (id) {
+            R.id.createNewButton -> startActivity(TDRouter.onGoToDashboard(this))
+            R.id.cancelButton -> startActivity(TDRouter.onGoToDashboard(this))
+        }
     }
 
     private fun setUpGyroscope() {

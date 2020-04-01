@@ -59,6 +59,11 @@ class TDDashboardActivity : TDBaseActivity(){
 
         val animation = AnimationUtils.loadAnimation(this, R.anim.splash_animation)
         dashboardIntroTextView.startAnimation(animation)
+
+        val animation2 = AnimationUtils.loadAnimation(this, R.anim.slide_up)
+        dashboardTasksActivityCardView.startAnimation(animation2)
+        dashboardNotesActivityCardView.startAnimation(animation2)
+        dashboardAlarmActivityCardView.startAnimation(animation2)
     }
 
     override fun setOnClickAction(id: Int) {
@@ -82,12 +87,12 @@ class TDDashboardActivity : TDBaseActivity(){
 
     private fun setUpRecyclerView() {
         val list = listOf(
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
-            TasksListEntity("Medium", "Makan", "Jangan lupa makan", "31/03/2020"),
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020"),
-            TasksListEntity("Urgent", "Kerjain Project", "Project UI/UX", "31/03/2020")
+            TasksListEntity("Urgent", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
+            TasksListEntity("Medium", "Eat", "Don't forget to eat and drink!", "01/04/2020"),
+            TasksListEntity("Medium", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020"),
+            TasksListEntity("Urgent", "Project", "Add Proximity Sensor and Gyroscope Sensor", "31/03/2020"),
+            TasksListEntity("Medium", "Eat", "Don't forget to eat and drink!", "01/04/2020"),
+            TasksListEntity("Medium", "Learn Kotlin", "Learn about animation using Kotlin Language", "07/04/2020")
         )
 
         tasksListAdapter = TDTasksListAdapter(list)

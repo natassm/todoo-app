@@ -32,14 +32,16 @@
 
             <TextView
                 android:id="@+id/tasksTextView"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
-                android:fontFamily="@font/dmsbold"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/dmsregular2"
                 android:text="@string/add_tasks"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/toolbarBackImageView"
                 app:layout_constraintTop_toBottomOf="@+id/toolbarBackImageView" />
 
@@ -49,6 +51,7 @@
                 android:layout_marginStart="32dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
                 app:cardBackgroundColor="@color/alice_blue"
                 app:cardCornerRadius="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -62,60 +65,71 @@
 
                     <TextView
                         android:id="@+id/textView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="24dp"
-                        android:fontFamily="@font/dmsbold"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/title"
                         android:textSize="16sp"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/textView2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/dmsbold"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/desc"
                         android:textSize="16sp"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/textView"
                         app:layout_constraintTop_toBottomOf="@+id/titleCardView" />
 
                     <TextView
                         android:id="@+id/textView3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
-                        android:fontFamily="@font/dmsbold"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/due_date"
                         android:textSize="16sp"
                         android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/textView"
                         app:layout_constraintTop_toBottomOf="@id/descCardView" />
 
                     <TextView
                         android:id="@+id/itemDueDateTextView"
-                        android:layout_width="wrap_content"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="24dp"
+                        android:layout_marginEnd="8dp"
                         android:fontFamily="@font/dmsregular"
                         android:text="@string/choose_due_date"
-                        android:textSize="14sp"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toStartOf="@+id/datePickerButton"
                         app:layout_constraintStart_toStartOf="@id/textView"
                         app:layout_constraintTop_toBottomOf="@id/textView3" />
 
                     <TextView
                         android:id="@+id/itemDueTimeTextView"
-                        android:layout_width="131dp"
+                        android:layout_width="0dp"
                         android:layout_height="21dp"
                         android:layout_marginTop="32dp"
-                        android:fontFamily="@font/dmsregular"
+                        android:layout_marginEnd="16dp"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/priority"
-                        android:textSize="14sp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@id/textView"
                         app:layout_constraintTop_toBottomOf="@+id/itemDueDateTextView" />
 
@@ -134,7 +148,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
                         android:padding="10dp"
                         app:cardBackgroundColor="@color/white"
@@ -153,7 +167,7 @@
                             android:fontFamily="@font/dmsregular"
                             android:hint="@string/titleTV"
                             android:inputType="textPersonName"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -162,7 +176,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginStart="16dp"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="16dp"
                         android:layout_marginEnd="16dp"
                         android:padding="10dp"
                         app:cardBackgroundColor="@color/white"
@@ -181,7 +195,7 @@
                             android:fontFamily="@font/dmsregular"
                             android:hint="@string/descTV"
                             android:inputType="textPersonName"
-                            android:textSize="14sp" />
+                            android:textSize="18sp" />
 
                     </androidx.cardview.widget.CardView>
 
@@ -193,7 +207,7 @@
                         android:layout_marginTop="24dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/background_choose_date"
-                        android:fontFamily="@font/dmsbold"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/create_new"
                         android:textColor="@color/white"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -206,15 +220,16 @@
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/background_choose_date"
-                        android:fontFamily="@font/dmsregular"
-                        android:padding="10dp"
+                        android:fontFamily="@font/dmsregular2"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
                         android:text="@string/choose_date"
                         android:textAllCaps="false"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="@+id/itemDueDateTextView"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/itemDueDateTextView"
-                        tools:fontFamily="@font/dmsbold" />
+                        tools:fontFamily="@font/dmsregular2" />
 
                     <Button
                         android:id="@+id/cancelButton"
@@ -225,7 +240,7 @@
                         android:layout_marginEnd="16dp"
                         android:layout_marginBottom="24dp"
                         android:background="@drawable/background_button_red"
-                        android:fontFamily="@font/dmsbold"
+                        android:fontFamily="@font/dmsregular2"
                         android:text="@string/cancel"
                         android:textColor="@color/white"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -237,9 +252,9 @@
                         android:id="@+id/spinner"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="32dp"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="16dp"
-                        android:layout_marginEnd="32dp"
+                        android:layout_marginEnd="16dp"
                         android:prompt="@string/priority"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"

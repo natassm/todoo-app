@@ -14,9 +14,9 @@
         <shape>
             <solid
                 android:color="@color/gray_olive"/>
-            <stroke
-                android:width="3dip"
-                android:color="@color/english_walnut" />
+<!--            <stroke-->
+<!--                android:width="3dip"-->
+<!--                android:color="@color/english_walnut" />-->
             <corners android:radius="15dp"/>
         </shape>
     </item>

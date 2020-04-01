@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -46,10 +47,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="32dp"
-                android:fontFamily="@font/dmsbold"
+                android:fontFamily="@font/dmsregular2"
                 android:text="@string/notes"
                 android:textColor="@color/white"
-                android:textSize="30sp"
+                android:textSize="25sp"
+                android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="@+id/toolbarBackImageView"
                 app:layout_constraintTop_toBottomOf="@+id/toolbarBackImageView" />
 
@@ -88,14 +90,16 @@
                     <TextView
                         android:id="@+id/listNotesDescTextView"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
                         android:clickable="true"
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/dmsregular"
                         android:text="@string/notes_1"
-                        android:textSize="14sp"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/listNotesTitleTextView"
                         app:layout_constraintTop_toBottomOf="@id/listNotesTitleTextView" />
@@ -141,14 +145,16 @@
                     <TextView
                         android:id="@+id/listNotesDescTextView2"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
                         android:clickable="true"
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/dmsregular"
                         android:text="@string/notes_3"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/listNotesTitleTextView2"
                         app:layout_constraintTop_toBottomOf="@id/listNotesTitleTextView2" />
@@ -194,14 +200,16 @@
                     <TextView
                         android:id="@+id/listNotesDescTextView3"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="0dp"
                         android:layout_marginTop="8dp"
                         android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
                         android:clickable="true"
                         android:focusableInTouchMode="true"
                         android:fontFamily="@font/dmsregular"
                         android:text="@string/notes_5"
-                        android:textSize="16sp"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="@+id/listNotesTitleTextView3"
                         app:layout_constraintTop_toBottomOf="@id/listNotesTitleTextView3" />

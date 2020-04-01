@@ -3,25 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".TDAddNotesActivity">
+    android:layout_height="wrap_content"
+    android:background="@drawable/activity_add_notes_bg"
+    tools:context=".screen.TDAddNotesActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="24dp"
+        android:src="@drawable/ic_sound_waves"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listNotesCardView"
-        app:srcCompat="@drawable/ic_wave_hands" />
+        app:layout_constraintTop_toBottomOf="@+id/listNotesCardView" />
 
     <ImageView
         android:id="@+id/toolbarBackImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/ic_arrow_brown"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,10 +32,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:fontFamily="@font/dmsbold"
+        android:fontFamily="@font/dmsregular2"
         android:text="@string/notes"
         android:textColor="@color/cement"
-        android:textSize="30sp"
+        android:textSize="25sp"
+        android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/toolbarBackImageView"
         app:layout_constraintStart_toEndOf="@+id/toolbarBackImageView"
         app:layout_constraintTop_toTopOf="@+id/toolbarBackImageView" />
@@ -96,33 +98,35 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-    android:id="@+id/createNewButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginStart="16dp"
-    android:layout_marginTop="16dp"
-    android:background="@drawable/background_choose_date"
-    android:fontFamily="@font/dmsbold"
-    android:paddingStart="30dp"
-    android:paddingEnd="30dp"
-    android:text="@string/create_new"
-    android:textColor="@color/white"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <Button
-        android:id="@+id/soundButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/addNotesCreateNewButton"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/background_choose_date"
-        android:fontFamily="@font/dmsbold"
-        android:paddingStart="30dp"
-        android:paddingEnd="30dp"
+        android:fontFamily="@font/dmsregular2"
         android:text="@string/create_new"
         android:textColor="@color/white"
-        app:layout_constraintStart_toEndOf="@id/createNewButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/addNotesCancelbutton"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/addNotesCancelbutton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_button_red"
+        android:fontFamily="@font/dmsregular2"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/addNotesCreateNewButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addNotesCreateNewButton"
+        app:layout_constraintTop_toTopOf="@+id/addNotesCreateNewButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
